@@ -19,7 +19,7 @@
   <div class="center">
     <p>java_ssm</p>
     <div>
-      <a href="/todo/queryTodo.do">查询Todo</a>
+      <a href="/todo/queryTodo">查询Todo</a>
     </div>
   </div>
 </body>

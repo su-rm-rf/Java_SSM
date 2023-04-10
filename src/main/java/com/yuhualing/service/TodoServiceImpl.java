@@ -17,14 +17,37 @@ public class TodoServiceImpl implements TodoService {
     private TodoDao todoDao;
 
     @Override
-    public int addTodo(Todo todo) {
-        int rows = todoDao.insertTodo(todo);
+    public List<Todo> list(String completed) {
+        List<Todo> list = todoDao.list(completed);
+        return list;
+    }
+
+    @Override
+    public Todo detail(Integer id) {
+        return todoDao.detail(id);
+    }
+
+    @Override
+    public int add(Todo todo) {
+        int rows = todoDao.add(todo);
         return rows;
     }
 
     @Override
-    public List<Todo> queryTodo() {
-        List<Todo> list = todoDao.queryTodo();
-        return list;
+    public int update(Todo todo) {
+        int rows = todoDao.update(todo);
+        return rows;
+    }
+
+    @Override
+    public int delete(Integer id) {
+        int rows = todoDao.delete(id);
+        return rows;
+    }
+
+    @Override
+    public int clear() {
+        int rows = todoDao.clear();
+        return rows;
     }
 }

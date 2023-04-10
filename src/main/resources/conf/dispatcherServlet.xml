@@ -10,10 +10,10 @@
     <context:component-scan base-package="com.yuhualing.controller" />
 
     <!-- 声明视图解析器 -->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/" />
-        <property name="suffix" value=".jsp" />
-    </bean>
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">-->
+        <!--<property name="prefix" value="/WEB-INF/" />-->
+        <!--<property name="suffix" value=".jsp" />-->
+    <!--</bean>-->
 
     <!-- 声明springmvc注解驱动 -->
     <mvc:annotation-driven />
